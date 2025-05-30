@@ -1,0 +1,63 @@
+.custom-navbar {
+  background: white; /* Solid white background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: background 0.4s ease-in-out;
+}
+
+.navbar-brand {
+  color: #000 !important;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Softer black glow */
+}
+
+.animated-link {
+  color: #000 !important; /* Black text */
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #0ea5e9; /* Sky blue underline */
+  transition: width 0.3s ease;
+}
+
+.animated-link:hover::after {
+  width: 100%;
+}
+
+.animated-link:hover {
+  color: #0ea5e9 !important; /* Sky blue on hover */
+}
+
+.animate-collapse.collapse:not(.show) {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.animate-collapse.collapse.show {
+  max-height: 500px;
+  transition: max-height 0.4s ease;
+}
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+}

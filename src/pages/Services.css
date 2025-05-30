@@ -1,0 +1,215 @@
+/* Global background */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Full-width dark background for the page */
+.full-background {
+  background-color: #1e1e2f;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.wedding-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fff6f6, #f9f9ff);
+}
+.wedding-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card-tex{
+  color: black !important;
+}
+
+/* Hero section */
+.services-hero {
+  background-image: url('https://images.pexels.com/photos/3014013/pexels-photo-3014013.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  color: #14b8a6;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Responsive adjustments for small mobile devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Cards */
+.service-card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #25253a;
+  color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card title */
+.service-card .card-title {
+  color: #14b8a6;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Modal animation */
+.custom-modal .modal-content {
+  background-color: #2e2e40;
+  color: #fff;
+  animation: slideFadeIn 0.5s ease;
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal header */
+.custom-modal .modal-title {
+  color: #14b8a6;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Modal body */
+.modal-body p {
+  color: #eee;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.modal-body h5 {
+  color: #14b8a6;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Modal footer buttons */
+.modal-footer .btn-success {
+  background-color: #14b8a6;
+  border: none;
+  font-weight: bold;
+}
+
+.modal-footer .btn-success:hover {
+  background-color: #0d9488;
+}
+
+/* Sample photo section */
+.sample-photo {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.sample-photo:hover {
+  transform: scale(1.05);
+}
+
+.sample-photo-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.sample-photo-container img {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Prominent price styling */
+.drone-price {
+  font-size: 1.5rem;
+  color: #22c55e; /* Green shade */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Drone details list with icons and animation */
+.drone-details ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  animation: fadeInList 1s ease-in-out;
+}
+
+.drone-details li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #ddd;
+}
+
+.drone-details li i {
+  margin-right: 10px;
+  color: #14b8a6;
+  font-size: 1.2rem;
+}
+
+/* Fade-in animation for list items */
+@keyframes fadeInList {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section container */
+.services-container {
+  background-color: #1e1e2f;
+  color: #fff;
+}
